@@ -72,12 +72,18 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
 }
 .nav_c {
-  width: 700px;
+  width: 680px;
 }
 .content {
   color: #fff;
   font-size: 30px;
+  margin-top: 120px;
 }
 </style>

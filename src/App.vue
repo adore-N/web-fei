@@ -1,8 +1,20 @@
 <template>
   <div id="app">
+    <NavBanner></NavBanner>
     <router-view/>
+    <Footer></Footer>
   </div>
 </template>
+
+<script>
+import NavBanner from '@/components/NavBanner.vue'
+import Footer from '@/components/Footer.vue'
+export default {
+  components: {
+    NavBanner, Footer
+  }
+}
+</script>>
 
 <style lang="scss">
 html body {

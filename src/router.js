@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import AdvertisingResources from './views/AdvertisingResources.vue'
+import WechatMoments from './views/WechatMoments.vue'
+import Advertising from './views/Advertising.vue'
 
 Vue.use(Router)
 
@@ -8,10 +11,29 @@ export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
+    // 首页
     {
       path: '/',
       name: 'home',
       component: Home
+    },
+    // 广告资源
+    {
+      path: '/advertisingResources',
+      name: 'advertisingResources',
+      component: AdvertisingResources
+    },
+    // 广告投放
+    {
+      path: '/advertising',
+      name: 'advertisingResources',
+      component: Advertising
+    },
+    // 朋友圈
+    {
+      path: '/wechatMoments',
+      name: 'WechatMoments',
+      component: WechatMoments
     },
     {
       path: '/about',
